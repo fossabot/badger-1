@@ -7,8 +7,8 @@
   FontSize: (int) 10,
   FontFamily: (string) (len=7) "Verdana",
   TemplateFilename: (string) (len=14) "semaphore.tmpl",
-  StatusTextWidth: (int) 64,
-  StatusWidth: (int) 84,
-  SubjectTextWidth: (int) 70,
-  SubjectWidth: (int) 90
+  StatusTextWidth: (int) 72,
+  StatusWidth: (int) 92,
+  SubjectTextWidth: (int) 77,
+  SubjectWidth: (int) 97
 }

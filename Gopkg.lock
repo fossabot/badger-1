@@ -2,88 +2,97 @@
 
 
 [[projects]]
+  digest = "1:16c495c70136e179afb42f9ca9b799982ff729e3490300845bb4514360f6864c"
   name = "github.com/bradleyjkemp/cupaloy"
   packages = ["."]
+  pruneopts = "UT"
   revision = "6beff3cebcaae538bba80223de5cfbefd2baf035"
   version = "v2.2.0"
 
 [[projects]]
+  digest = "1:a2c1d0e43bd3baaa071d1b9ed72c27d78169b2b269f71c105ac4ba34b1be4a39"
   name = "github.com/davecgh/go-spew"
   packages = ["spew"]
+  pruneopts = "UT"
   revision = "346938d642f2ec3594ed81d874461961cd0faa76"
   version = "v1.1.0"
 
 [[projects]]
+  digest = "1:234bd3c0b701cdb49dbda54821eecf2fc76431618751ee69e95248e358b26fdb"
   name = "github.com/gobuffalo/packr"
   packages = ["."]
+  pruneopts = "UT"
   revision = "7f4074995d431987caaa35088199f13c44b24440"
   version = "v1.11.0"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/golang/freetype"
-  packages = [
-    "raster",
-    "truetype"
-  ]
-  revision = "e2365dfdc4a05e4b8299a783240d4a7d5a65d4e4"
-
-[[projects]]
+  digest = "1:160eabf7a69910fd74f29c692718bc2437c1c1c7d4c9dea9712357752a70e5df"
   name = "github.com/gorilla/context"
   packages = ["."]
+  pruneopts = "UT"
   revision = "1ea25387ff6f684839d82767c1733ff4d4d15d0a"
   version = "v1.1"
 
 [[projects]]
+  digest = "1:88aa9e326e2bd6045a46e00a922954b3e1a9ac5787109f49ac85366df370e1e5"
   name = "github.com/gorilla/mux"
   packages = ["."]
+  pruneopts = "UT"
   revision = "53c1911da2b537f792e7cafcb446b05ffe33b996"
   version = "v1.6.1"
 
 [[projects]]
   branch = "master"
+  digest = "1:cf296baa185baae04a9a7004efee8511d08e2f5f51d4cbe5375da89722d681db"
   name = "github.com/hashicorp/golang-lru"
   packages = [
     ".",
-    "simplelru"
+    "simplelru",
   ]
+  pruneopts = "UT"
   revision = "0fb14efe8c47ae851c0034ed7a448854d3d34cf3"
 
 [[projects]]
+  digest = "1:40e195917a951a8bf867cd05de2a46aaf1806c50cf92eebf4c16f78cd196f747"
   name = "github.com/pkg/errors"
   packages = ["."]
+  pruneopts = "UT"
   revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
   version = "v0.8.0"
 
 [[projects]]
+  digest = "1:0028cb19b2e4c3112225cd871870f2d9cf49b9b4276531f03438a88e94be86fe"
   name = "github.com/pmezard/go-difflib"
   packages = ["difflib"]
+  pruneopts = "UT"
   revision = "792786c7400a136282c1664665ae0a8db921c6c2"
   version = "v1.0.0"
 
 [[projects]]
+  digest = "1:f85e109eda8f6080877185d1c39e98dd8795e1780c08beca28304b87fd855a1c"
   name = "github.com/stretchr/testify"
   packages = ["assert"]
+  pruneopts = "UT"
   revision = "12b6f73e6084dad08a7c6e575284b177ecafbc71"
   version = "v1.2.1"
 
 [[projects]]
+  digest = "1:c489d96556ad97b469db58ea1c77271ff36f06171dbbe743454d633b4166d78c"
   name = "github.com/urfave/negroni"
   packages = ["."]
+  pruneopts = "UT"
   revision = "dae7dc68e5a970eeecdaa7e4191e11d103cb8c1d"
-
-[[projects]]
-  branch = "master"
-  name = "golang.org/x/image"
-  packages = [
-    "font",
-    "math/fixed"
-  ]
-  revision = "f315e440302883054d0c2bd85486878cb4f8572c"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "ea6119453d6fae256145aade2a4524d49479e49eb15b361e6fde160e9e4f2da2"
+  input-imports = [
+    "github.com/bradleyjkemp/cupaloy",
+    "github.com/gobuffalo/packr",
+    "github.com/gorilla/mux",
+    "github.com/hashicorp/golang-lru",
+    "github.com/stretchr/testify/assert",
+    "github.com/urfave/negroni",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1

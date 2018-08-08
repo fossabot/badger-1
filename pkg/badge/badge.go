@@ -36,7 +36,8 @@ type badge struct {
 	SubjectWidth     int
 }
 
-// minifies SVG by removing newline & tab characters
+// minifySVG reduces size of SVG by removing newline & tab characters
+//
 func minifySVG(svg string) string {
 	result := svg
 	result = strings.Replace(result, "\n", "", -1)
@@ -96,16 +97,8 @@ func newBadge(style, subject, status, color string) (badge, error) {
 		}
 	}
 
-	subjectTextWidth, err := computeTextWidth(svgBadge.Subject, svgBadge.FontSize, svgBadge.FontFamily)
-	if err != nil {
-		return svgBadge, err
-	}
-
-	statusTextWidth, err := computeTextWidth(svgBadge.Status, svgBadge.FontSize, svgBadge.FontFamily)
-	if err != nil {
-		return svgBadge, err
-	}
-
+	subjectTextWidth := computeTextWidth(svgBadge.Subject)
+	statusTextWidth := computeTextWidth(svgBadge.Status)
 	svgBadge.SubjectWidth = subjectTextWidth + svgBadge.OuterPadding + svgBadge.InnerPadding
 	svgBadge.StatusWidth = statusTextWidth + svgBadge.OuterPadding + svgBadge.InnerPadding
 	svgBadge.SubjectTextWidth = subjectTextWidth

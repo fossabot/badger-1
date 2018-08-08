@@ -9,6 +9,6 @@
   TemplateFilename: (string) (len=12) "plastic.tmpl",
   StatusTextWidth: (int) 56,
   StatusWidth: (int) 66,
-  SubjectTextWidth: (int) 63,
-  SubjectWidth: (int) 73
+  SubjectTextWidth: (int) 62,
+  SubjectWidth: (int) 72
 }
